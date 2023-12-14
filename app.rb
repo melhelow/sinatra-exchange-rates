@@ -44,7 +44,7 @@ get("/:from_currency") do
   parsed_response = JSON.parse(raw_data_string)
 
 
-  
+
   @ps_key = parsed_response.fetch("currencies")
 
   
