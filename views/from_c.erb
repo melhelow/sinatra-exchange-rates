@@ -1,0 +1,10 @@
+<h1>Convert <%= @original_currency %></h1>
+
+<p>Go <a href="/">back</a>.</p>
+<ul>
+<% @ps_key.keys.each do | new_ps | %> 
+<li>
+<a href="/<%= @original_currency %>/<%= new_ps %>">Convert 1 <%= @original_currency %> to <%= new_ps %>...</a
+</li>
+<% end %>
+</ul>
